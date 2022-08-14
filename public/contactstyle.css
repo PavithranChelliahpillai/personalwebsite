@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+    background-color: #1d314d;
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.ptitle {
+    color: #adc9ba;
+    top: 5vw;
+    z-index: -1;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 200%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vw;
+    letter-spacing: -7px;
+    right: 130%;
+    position: absolute;
+}
+
+.outline {
+    -webkit-text-stroke: 0.25vw #0f1a29;
+    color: transparent;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ptitler {
+    color: #adc9ba;
+    position: relative;
+    top: 10vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 200%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vw;
+    letter-spacing: -7px;
+    right: 900px;
+    z-index: -1;
+    position: absolute;
+}
+
+#mrgn h1 {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: white;
+    font-size: 1.75vw;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+nav {
+    color: #afb55e;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    background-color: #0f1a29;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+    padding: 0px 7vw 0px 7vw;
+    margin: 0px;
+    font-size: 1.7vw;
+}
+
+nav li a {
+    position: relative;
+    display: block;
+    color: #afb55e;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    margin: 0;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #afb55e;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+nav a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+img {
+    width: 3vw;
+    height: 3vw;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative
+}
